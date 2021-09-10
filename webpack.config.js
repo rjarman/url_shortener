@@ -113,7 +113,7 @@ module.exports = (env, argv) => {
   process.env.NODE_ENV = argv.mode;
   if (argv.mode === 'production') {
     config.forEach((con) => {
-      con.output.publicPath = 'https://www.heaplinker.com/';
+      con.output.publicPath = 'https://url-shortener-5400.herokuapp.com/';
       con.optimization = { minimize: true };
     });
   }
