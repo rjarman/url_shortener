@@ -7,7 +7,7 @@ export class Card extends React.Component {
       <div className="card" id="card">
         <span>
           Shortened URL:{' '}
-          <a href="http://localhost:8080/" target="_blank">
+          <a href="http://localhost:8080/" target="_blank" id="genURLLink">
             <span id="genURL">http://localhost:8080/</span>
           </a>
         </span>

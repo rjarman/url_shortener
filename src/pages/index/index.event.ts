@@ -1,17 +1,6 @@
 import { link } from '../config.pages.json';
 
 export class IndexEvents {
-  // private landingSlideLeft = Array.from(
-  //   document.getElementsByClassName(
-  //     'landing_slide_left'
-  //   ) as HTMLCollectionOf<HTMLElement>
-  // )[0];
-  // private landingSlideRight = Array.from(
-  //   document.getElementsByClassName(
-  //     'landing_slide_right'
-  //   ) as HTMLCollectionOf<HTMLElement>
-  // )[0];
-
   private hostLink: string;
 
   private card = document.getElementById('card');
@@ -20,6 +9,7 @@ export class IndexEvents {
   private toast = document.getElementById('toast');
   private toastText = document.getElementById('toastText');
   private genURL = document.getElementById('genURL');
+  private genURLLink = <HTMLAnchorElement>document.getElementById('genURLLink');
   private shortBtn = document.getElementById('shortBtn');
 
   constructor() {
@@ -30,6 +20,8 @@ export class IndexEvents {
     this.copyEvents();
     this.shortBtnEvents();
   }
+
+  // **** if hasura or any database is used then cookies will be helpful
 
   private setCookie(name: string, value: string) {
     if (!this.getCookie(name)) {
@@ -95,6 +87,7 @@ export class IndexEvents {
           this.getCookie('_i'),
           (data: { shortURL: string; id: string }) => {
             if (this.genURL) this.genURL.innerHTML = data.shortURL;
+            if (this.genURLLink) this.genURLLink.href = data.shortURL;
             this.card?.classList.add('active');
           }
         );
@@ -104,6 +97,7 @@ export class IndexEvents {
           null,
           (data: { shortURL: string; id: string }) => {
             if (this.genURL) this.genURL.innerHTML = data.shortURL;
+            if (this.genURLLink) this.genURLLink.href = data.shortURL;
             this.card?.classList.add('active');
             this.setCookie('_i', data.id);
           }

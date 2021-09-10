@@ -8,7 +8,6 @@ import {
   Application as app,
 } from 'express';
 import { fetchData } from './routerResponse';
-import { colorTheme } from './misc/colorTheme';
 
 /**
  * @Server
@@ -56,9 +55,3 @@ export type Router = router;
 export const Router = router;
 export const express = ex;
 export const FetchData = fetchData;
-
-/**
- * @Miscellaneous
- */
-
-export const Color = colorTheme;

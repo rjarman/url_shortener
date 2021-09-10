@@ -6,7 +6,6 @@ import {
   ViewArg,
   ServerArg,
 } from './server.types';
-import { Color } from './server.types';
 import { port, address, publicFolder } from './config.server.json';
 import path from 'path';
 import { DatabaseController } from './database.controller';
@@ -63,10 +62,9 @@ export class ApplicationHandler {
   listen(): void {
     const _ = this.__app.listen(this.__port, () => {
       console.log(
-        Color.custom.green('Server started at ') +
-          `http://${JSON.parse(JSON.stringify(_.address())).address}:${
-            this.__port
-          }/`
+        `Server started at http://${
+          JSON.parse(JSON.stringify(_.address())).address
+        }:${this.__port}/`
       );
     });
   }
