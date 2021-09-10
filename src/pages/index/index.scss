@@ -1,0 +1,68 @@
+@import '../styles.scss';
+@import '../variables.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.inp {
+  background-color: $bg-col;
+  color: $fnt-col;
+  padding: 6px 10px;
+  width: 120px;
+  border: none;
+  margin-top: 1px;
+  margin-right: 8px;
+  font-family: 'Segoe UI Light', 'Segoe UI', 'Segoe', Tahoma, Helvetica, Arial,
+    sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  border-bottom: $border-col solid 2px;
+  transition: 1s;
+}
+
+.inp::placeholder {
+  color: $fnt-col;
+  font-family: 'Segoe UI Light', 'Segoe UI', 'Segoe', Tahoma, Helvetica, Arial,
+    sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.inp:focus,
+.inp:hover {
+  width: 400px;
+  font-family: 'Segoe UI Light', 'Segoe UI', 'Segoe', Tahoma, Helvetica, Arial,
+    sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  transition: 1s;
+  border-bottom: $border-col solid 2px;
+  outline: none;
+}
+
+.btn {
+  cursor: pointer;
+  font-family: 'Segoe UI Light', 'Segoe UI', 'Segoe', Tahoma, Helvetica, Arial,
+    sans-serif;
+  padding-top: 5px;
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+}

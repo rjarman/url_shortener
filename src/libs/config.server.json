@@ -1,0 +1,13 @@
+{
+  "address": "localhost",
+  "port": 8080,
+  "database": {
+    "offline": "mongodb://localhost:27017/test",
+    "online": "mongodb+srv://Rafsun:Amrin(5400)@heaplinkercluster.65fed.mongodb.net/heaplinker?retryWrites=true&w=majority"
+  },
+  "publicFolder": "public/",
+  "link": {
+    "development": "http://localhost:8080/",
+    "production": "https://www.heaplinker.com/"
+  }
+}

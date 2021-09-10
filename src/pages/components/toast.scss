@@ -1,0 +1,28 @@
+.toast {
+  position: fixed;
+  display: inline-block;
+  color: white;
+  font-weight: 300;
+  bottom: 40px;
+  left: 50%;
+  opacity: 0;
+  transform: translateX(-50%);
+  animation-fill-mode: backwards;
+  transition: opacity 2s;
+}
+
+.toast.active {
+  animation: faded 2s;
+}
+
+@keyframes faded {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 50%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}

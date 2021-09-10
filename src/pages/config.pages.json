@@ -1,0 +1,6 @@
+{
+  "link": {
+    "development": "http://localhost:8080/",
+    "production": "https://www.heaplinker.com/"
+  }
+}

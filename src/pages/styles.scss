@@ -1,0 +1,38 @@
+@import 'variables.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dl,
+dd,
+ol,
+ul,
+menu,
+figure,
+blockquote,
+p,
+pre,
+form,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  background-color: $bg-col;
+  font-family: 'Segoe UI', 'Segoe', Tahoma, Helvetica, Arial, sans-serif;
+}
