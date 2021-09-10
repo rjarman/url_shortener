@@ -5,7 +5,7 @@
     "node": "12.x",
     "npm": "6.x"
   },
-  "description": "This is the main website of heaplinker.com.",
+  "description": "This is a url-shortener application with nodejs using typescript and react server side rendering.",
   "main": "dist/server.bundle.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -18,15 +18,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/heaplinker/heaplinker.com.git"
+    "url": "git+https://github.com/rjarman/url_shortener.git"
   },
   "keywords": [],
   "author": "Rafsun Jany Arman",
   "license": "",
   "bugs": {
-    "url": "https://github.com/heaplinker/heaplinker.com/issues"
+    "url": "https://github.com/rjarman/url_shortener/issues"
   },
-  "homepage": "https://github.com/heaplinker/heaplinker.com#readme",
+  "homepage": "https://github.com/rjarman/url_shortener#readme",
   "devDependencies": {
     "@types/express": "^4.17.8",
     "@types/node": "^14.14.37",
